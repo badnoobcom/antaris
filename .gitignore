@@ -1,0 +1,4 @@
+*.idea
+*.iml
+*.tar*
+atlassian-ide-plugin.xml

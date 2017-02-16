@@ -1,0 +1,25 @@
+<h1>Hello "[NAME]"</h1>
+<p>Take a look at the GET parameter and change it as you like.</p>
+<form action="postMe" method="post">
+    <table>
+        <tr>
+            <td><label for="payload">Payload</label></td>
+            <td><input type="text" name="payload" id="payload" value="Payload actually has nothing to do with $$$"/></td>
+        </tr>
+        <tr>
+            <td><label for="e-mail-address">E-mail address</label></td>
+            <td><input type="email" name="e-mail-address" id="e-mail-address" value="antaris-test@example.com"/></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <label for="textload">Put some random text in here. Helps simulating packets > 8K, which is the packet size limit for AJPv13 packets</label>
+                <textarea name="textload" id="textload" cols="80" rows="5">The quick brown fox jumps over the lazy god :)
+Fischers Fritze fischt frische Fische, frische Fische fischt Fischers Fritze.</textarea>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="submit"></td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+</form>

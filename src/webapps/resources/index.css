@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+
+*, *:before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3vmax;
+
+    color: #111;
+}
+
+h2 {
+    opacity: .75;
+    font-size: 1em;
+    border-bottom: .05em dotted #fff;
+}
+
+h1 {
+    color: #333;
+    font-weight: 400;
+}
+
+p {
+    font-size: .5em;
+    background: rgba(255,255,255,.5);
+    padding: .5em;
+}
+
+a {
+    color: #101010;
+    position: relative;
+}
+
+a:hover {
+    color: #2a6496;
+    text-decoration: underline;
+    background: rgba(42, 100, 150, .25);
+}
+
+main {
+    margin: 1em auto 0;
+    z-index: 1;
+    background: rgba(0,0,0,.25);
+    padding: 0 .5em .5em;
+}
+
+header {
+    z-index: 10;
+    color: #101010;
+}
+
+header nav {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+}
+
+header nav ul li {
+    display: inline-block;
+    float: none;
+    border-left: 0.05em rgba(255, 255, 255, .5) solid;
+    padding: .1em .2em .3em .2em;
+    line-height: .5em;
+    text-overflow: clip;
+}
+
+nav ul :first-child {
+    border-left: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: .5em;
+}
+
+label {
+    font-size: .4em;
+}
+
+input:not([type=textarea]) {
+    min-width: 20em;
+}
+
+.code {
+    font-family: monospace;
+    font-size: .4em;
+    border: 1px solid #555;
+    background: #999;
+    color: #ddd;
+    margin: 1em;
+    clear:both;
+}
+
+.antaris {
+    font-weight: bold;
+    background: rgba(0,0,0, .25);
+    padding: .2em;
+    border-radius: .5em;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fullbg {
+    background-image: url('./images/bridge_roots.jpg');
+    opacity: .5;
+    background-position-x: 50%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+#imageContainer {
+    display: block;
+    float: left;
+    clear: both;
+    width:100%;
+}
+
+div.row {
+    height: 1px;
+    overflow: hidden;
+}
+
+div.row div {
+    width: 1px;
+    height: 1px;
+    float: left;
+}

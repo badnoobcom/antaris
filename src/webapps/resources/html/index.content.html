@@ -1,0 +1,17 @@
+<h1>Welcome to the antaris test page</h1>
+<div>
+    <h2>What is antaris?</h2>
+    <p>Antaris is the prototype of a <b>php based application server</b>, similar to those known in the <i>Java</i>  world, like <a href="https://spring.io/" target="_blank">Spring</a>.</p>
+
+    <h2>How does it work?</h2>
+    <p>Antaris runs <b>php</b> as a <i>standalone process</i> via <b>php-cli</b>. It relies on <i>apache2</i> to handle incoming http and https traffic.</p>
+    <p>To forward the traffic from <i>apache2</i> to <span class="antaris">antaris</span>, <i>mod_jk</i> is used, which is the <b>Apache Jakarta</b> module, used for <b>Java based Tomcat instances.</b></p>
+    <p><b>Jakarta</b> relies on the <a href="https://tomcat.apache.org/connectors-doc-archive/jk2/common/AJPv13.html" target="_blank">AJPv13 protocol</a>, which has been adapted to <b>php</b>. That is the essence of the <span class="antaris">antaris'</span> core - a library for parsing <b>AJP13 packets</b> and convert them into <b>php objects</b> to work with.</p>
+
+    <h2>Why mod_jk?</h2>
+    <p>To avoid the complex task of parsing <i>HTTP</i> requests in <b>php</b>, we're using <i>apache2</i> with <i>mod_jk.</i> Using this approach, we can rely on the experience of the <i>Apache Foundation's</i> projects and their experience. This also saves as from a lot of headaches related to security issues.</p>
+
+    <h2>Now, can I test its capabilities?</h2>
+    <p>Actually, you're doing it right now! This page runs on an <span class="antaris">antaris</span> instance, in a <a href="https://www.docker.com" target="_blank">Docker</a> container. Give it a try and check out the various test pages we've prepared for you. Make sure to take a look at the <a href="/imagetohtml">Image to HTML converter</a>, which will convert your uploaded image into HTML/CSS and render it.<br>
+        You should, of course, check out the <a href="https://github.com/badnoobcom/antaris" target="_blank">sources on github</a>.</p>
+</div>
