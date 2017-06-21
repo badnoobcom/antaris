@@ -43,7 +43,7 @@ class HexFormatter
 	private function convertStringToHexPairs(string $strValue):string
 	{
 		$strHexPairs = '';
-		for($i = 0; $i < 0xF; ++$i)
+		for($i = 0; $i <= 0xF; ++$i)
 		{
 			$strCurrentHexPair = strtoupper(dechex(ord(substr($strValue, $i, 1))));
 			while(strlen($strCurrentHexPair) < 2)
@@ -52,9 +52,14 @@ class HexFormatter
 			}
 
 			$strHexPairs .= $strCurrentHexPair .' ';
+			
+			if ($i === 7)
+			{
+				$strHexPairs .= ' ';
+			}
 		}
 
-		return $strHexPairs;
+		return trim($strHexPairs);
 	}
 
 
